@@ -16,8 +16,6 @@ namespace AdwValaTemplate {
 			add_action_entries(APP_ACTIONS, this);
 			set_accels_for_action("app.quit", {"<Primary>q"});
 			set_accels_for_action("win.preferences", {"<Primary>comma"});
-
-			message (Config.APP_PATH);
 		}
 
 		public override void activate () {
