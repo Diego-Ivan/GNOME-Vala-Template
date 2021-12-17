@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=adw-vala-template
+Exec=adw-vala-template
+Icon=io.github.diegoivanme.AdwValaTemplate
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

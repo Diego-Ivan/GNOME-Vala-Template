@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk" version="4.0"/>
+  <template class="AdwValaTemplateWindow" parent="AdwApplicationWindow">
+    <property name="title">Vala Template</property>
+    <property name="default-width">460</property>
+    <property name="default-height">390</property>
+
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+
+        <child>
+          <object class="AdwHeaderBar">
+            <property name="show-end-title-buttons">true</property>
+
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="menu-model">primary_menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel">
+            <property name="valign">center</property>
+            <property name="vexpand">true</property>
+            <property name="label" translatable="yes">Hello World!</property>
+            <style>
+              <class name="title-1"/>
+            </style>
+          </object>
+        </child>
+
+      </object>
+    </child>
+
+  </template>
+
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">_Preferences</attribute>
+        <attribute name="action">win.preferences</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
+        <attribute name="action">win.shortcuts</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_About AdwValaTemplate</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

@@ -1,0 +1,7 @@
+data/io.github.diegoivanme.AdwValaTemplate.desktop.in
+data/io.github.diegoivanme.AdwValaTemplate.appdata.xml.in
+data/io.github.diegoivanme.AdwValaTemplate.gschema.xml
+src/window.ui
+src/main.vala
+src/window.vala
+
